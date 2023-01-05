@@ -9,7 +9,7 @@ jobs:
   sync:
 
     runs-on: ubuntu-latest
-
+    permissions: write-all
     steps:
       - uses: tgymnich/fork-sync@v1.6.3
         with:
