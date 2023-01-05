@@ -1,8 +1,9 @@
 name: Sync Fork
 
 on:
-  push:
-    branches: ["*"]
+  schedule:
+    - cron: '*/5 * * * *' # every 5 minutes
+  workflow_dispatch:
 
 jobs:
   sync:
