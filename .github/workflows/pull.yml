@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.6.3
         with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
           owner: SuperteamDAO
           base: main
           head: main
