@@ -2,6 +2,7 @@ name: Sync Fork
 
 on:
   push:
+    branches: ["*"]
 
 jobs:
   sync:
