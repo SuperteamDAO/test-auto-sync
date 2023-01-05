@@ -1,8 +1,8 @@
 name: Sync Fork
 
 on:
-  schedule:
-    - cron: '* * * * *' # every one minute
+  push:
+    branches: ["*"]
 
 jobs:
   sync:
@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.6.3
         with:
-          owner: ${{ github.repository_owner }}
+          owner: SuperteamDAO
           base: main
           head: main
